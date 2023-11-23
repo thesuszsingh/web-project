@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilory';
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    
+}
+.elem{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35vw;
+    position: relative;
+    margin: 0 80px 0;
+    padding: 0 30px 0;
+
+}
+.elem img{
+    height: 260px;
+    border-radius: 100%;
+    width: 260px;
+    scale: 0;
+    position: absolute;
+    opacity: 0;
+    transition: all linear 0.3s;
+    z-index: -1;
+}
+.elem h1{
+    font-size: 80px;
+    font-weight: 900;
+    color: #fff;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 2px;
+    mix-blend-mode: difference;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: #00000000;
+}
+#cursor{
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    z-index: 99;
+    border-radius: 100%;
+    transition: all linear 0.3s;
+}
+.forest{
+    z-index: -1;
+    background-size: cover;
+    position: absolute;
+}
+.like{
+    height: 9%;
+    width: 9%;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    perspective: 1000px;
+    transition: 0.5s linear;
+    background: linear-gradient(to right, #00bf8f, #004FF9);
+}
+.like:hover{
+    transform: scale(1.1);
+    translate: skew(30deg);
+    background: linear-gradient(to right, #b3ffab, #12fff7, #ffffff);
+}
+.like h2{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+.like h2:hover{
+    transform: scale(-0.5) rotate(180deg);
+}
+.like h2:active{
+    transform: scale(1) rotate(0deg);
+}

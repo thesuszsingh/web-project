@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: seagreen;
+    background: url(img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 450px;
+    background: transparent;
+    color: #fff;
+    border-radius: 35px;
+    padding: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2)
+}
+
+.wrapper h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 40px 0px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 10px 47px 10px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 1px 20px 20px;
+    font-size: 13px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    positon: relative;
+    transition: 0.3s ease-in-out;
+    transform-origin: center;
+    border-color: #15f4ee;
+}
+
+.wrapper .btn:hover {
+    color: white;
+    background: black;
+    width: 100%;
+    height: 60px;
+    box-shadow: 2px 3px 20px 0 #15f4ee inset, 2px 3px 20px 0 #15f4ee, 2px 3px 20px 0 #15f4ee, 2px 3px 20px 0 #15f4ee;
+}
+
+.wrapper .register-link {
+    margin: 10px 15px 3px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+
+}
+
+.register-link p a {
+    margin-left: 70px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+
+}
